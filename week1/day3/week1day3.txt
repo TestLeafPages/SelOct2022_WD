@@ -1,0 +1,152 @@
+Types of variable:
+  ->Two types of variable
+Global/Instance variable:
+========================
+ ->It means it is declared inside the class
+Advantage:It can be accessed by all the methods inside the class and also the main methods by
+creating an object
+Local Variables:
+================
+  ->It is declared inside the method
+  ->It can be accessed only within that method
+  ->Other methods cannot access it
+
+
+
+
+Arrays
+
+what is array?
+
+An array is collection of similar datatypes
+Array index start from '0'
+static data types 
+its fixed data 
+
+
+int mark4=56;  1 0
+int mark5=17;  2   1
+int mark6=10;  3     2
+int mark7=19;  4       3 
+two  types:
+int[] num= new int[5]
+
+num[0]=76;
+num[1]=98;
+num[2]=87;
+             
+int[] mark={90,100,23,45,77,89,76,09,80}
+
+mark.length
+
+length
+
+
+
+
+
+int[] num= new int[5]
+num[0]=45;
+num[1]=88;
+num[2]=67;
+num[3]=
+num[4]=
+if you not given values to arrya .its waste and we cannot reuse it.
+
+whenever i want store more on of values .i can go with array
+
+In Array single we can store all the values
+
+eg.
+int[] mark0=100;
+int[] mark1=90;
+int[] mark2=90;
+int[] mark3=80;
+
+int mark4=56;
+int mark5=17;
+int mark6=10;
+int mark7=19;
+
+in array:    0  1   2  3  4................n
+int[] mark={90,100,23,45,77,89,76,09,80}
+
+type 1:
+
+int[] mark=new int[9];
+mark[0]=23;
+mark[1]=09;
+mark[2]=87;
+mark[3]=76;
+
+type 2:
+
+int[] mark={90,100,23,45,77,89,76,09,80}
+
+mark[0]=
+mark[1]=
+.
+.
+.
+.
+mark[7]=
+
+char[] name={'t','e','s','t','l','e','a','f'}
+
+mark.length----total values it will print
+Arrays.sort(mark)
+09,23,45,76,77,80.......
+
+
+name.length
+
+
+
+
+
+
+String:
+String is class
+collection of characters
+
+String is immutable--- we cannot changeable
+
+
+two types we can create string
+1.STRING LITERAL
+2.STRING OBJECT
+
+STRING LITERAL
+String company ="TestLeaf";
+
+STRING OBJECT:
+String company=new String("TestLeaf");
+
+Methods:
+length()--to find 	how many characters --int
+toCharArray()-- covert string to character array--char[]
+equals("")-- to compare String content--boolean
+equalIgnoreCase()--it will not compare lowercase or uppercase
+contins()--  compare the string with matching content-- boolean
+indexOf()-- will return the index  position of the given character---int
+CharAt()--character available in the given  position---character
+
+
+
+
+
+
+
+
+89
+TestLeaf---
+           companyName & com,test
+		  
+
+
+		  
+		   TestLeaf---company----98
+		   
+		   TestLeaf--test--69
+		   
+		   TestLeaf----comp----89
