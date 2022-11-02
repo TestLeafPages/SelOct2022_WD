@@ -1,0 +1,54 @@
+*Axes     xpath or Advance xpath
+Axes xpath---direcion based on relationship
+
+
+Axes xpath:
+
+Advanced xPaths
+
+1. Parent to Child xPath:
+    - basicxPathForParent/childTagName
+    Ex: //p[@class='top']/label
+        //p[@class='top']/label[@for='username']
+
+2. child to Parent xPath:
+    - basicxPathForChild/parent::parentTagName
+
+    Ex: //p[@class='top']/parent::form
+
+3. grandParent to grandChild xPath:
+    - basicxPathForGrandParent//grandChildTagName
+
+    Ex: //form[@id='login']//label[@for='username']
+        //form[@id='login']//label[text()='Username']
+        //form[@id='login']//input[@id='password']
+        //div[@id='form']//label[@for='username']
+
+4. grandChild to grandParent xPath:
+    - basicxPathForGrandChild/ancestor::grandParentTagName
+
+    Ex: //input[@id='username']/ancestor::form
+        //input[@id='username']/ancestor::div
+
+5. ElderSibling to youngerSibling xPath:
+    - basicxPathForElderSibling/following-sibling::youngerSiblingTagName
+
+    Ex: //label[text()='Username']/following-sibling::input
+
+6. YoungerSibling to ElderSibling xPath:
+    - basicxPathForYoungerSibling/preceding-sibling::elderSiblingTagName
+
+    Ex: //input[@id='username']/preceding-sibling::label
+
+7. ElderCousin to YoungerCousin xPath:
+    - basicxPathForElderCousin/following::youngerCousinTagName
+
+    Ex: //label[text()='Username']/following::input[@id='password']
+        //label[text()='Username']/following::label
+
+8. YoungerCousin to ElderCousin xPath:
+    - basicxPathForYoungerCousin/preceding::elderCousinTagName
+
+    Ex: //label[text()='Password']/preceding::input
+	
+	
