@@ -1,0 +1,48 @@
+Todays Agenda:
+==============
+  1)9:30-11:00->Abstraction
+  2)11:00-11:30->Classroom
+  3)11:30-12:30->Waits
+  
+Abstraction:
+============
+    Display only the relevant information to the end-user and hide irrelevant features
+
+     -Interface
+     -Abstract Class
+     -Concrete Class
+	 
+Interface:
+==========
+    
+       - Design Document/BluePrint
+	   - Keyword implements 
+	   - 100% Abstract
+	   - Cannot instantiate the Interface(cannot create an object for an Interface)
+	   
+	   
+Concrete vs Abstract vs Interface:
+=================================
+      -Not fully ready(it can have both implemented+Abstract)
+      -abstract keyword is mandatory,if you write an abstract method
+      -It is not mandatory to implement all the methods of Interface
+      -we can have our own abstract method
+	  -Cannot create an object for an abstract class
+       
+Classroom:
+==========
+     Create an interface for Mobile
+	 Write 3 different methods (abstract)
+	 Create a class-IPhone
+	 Make sure all the 3 methods appear 
+	 
+	 
+Waits:
+======
+    implicitlyWait-Selenium wait
+	Thread.sleep()->Java wait
+	
+    	
+    	  
+	   
+	   
