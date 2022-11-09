@@ -1,0 +1,62 @@
+Today's Agenda:
+==============
+   1)9:30-11:00->static,Constructor,this,super
+   2)11:00-11:30->Classroom+Break
+   3)11:30-12:30->Collection-List
+   
+static:
+========
+   -static will be used for common data
+   - Only one copy will be there for a static data
+   - Effective memory management
+   - If we update the static data ,it will overwrite the old value with the new value 
+
+Constructor:
+============
+   default Constructor
+   parameterized Constructor
+
+Constructor OverLoading
+
+Can we call one Constructor from another Constructor?
+  Constructor chaining
+
+this
+
+
+Collection:
+==========
+
+     ->Dynamic array/(Size can grow / shrink)
+	 ->Dont need to give a definite size
+	 ->Automatically inc/dec
+	 
+String[] names={"Ramya","Ranjini"};
+int[] num = 12,323;
+
+Wrapper classes:
+================
+  Integer int
+  Boolean  boolean
+
+List:
+=====
+ -It is an Interface
+ -It can hold duplicate datas
+ -Order of the List-FIFO
+ ->Based on the Index
+ 
+Implementation:
+   -ArrayList/LinkedList 
+   
+Methods of    List:
+===================
+   1) size()-> no:of items in a list
+   2) add()-> element will be added in the list (index)
+   3) remove()->remove an element from the list
+   4) get()->retrieve ele from the given list
+   5) Collections.sort()->sort the list(Class)
+   
+
+findElement()->to find the single WebElement->WebElement
+findElements()->to find multiple WebElement->List<WebElement>   
