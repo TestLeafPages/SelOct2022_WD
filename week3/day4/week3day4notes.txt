@@ -1,0 +1,47 @@
+Todays Agenda:
+==============
+    1)9:30-10:30->Set
+	2)10:30-11:00->Classroom+Break
+	3)11:00-12:00->WebTable
+	4)12:00-12:15->Classroom
+	5)12:15-12:30->Recap
+	
+Set:
+====
+   -Interface
+   -It cannot hold duplicate data / Only Unique 
+
+Implementation Class:
+=====================
+   -   HashSet        -  print the data in a random order
+   -   TreeSet        -  Based on the ASCII order
+   -   LinkedHashSet  -  Based on the insertion order
+   
+Methods of Set:
+===============
+    1) size()-> Number of items in the set
+    2) add()->  to add the data in a set
+    3) remove() -> to remove the data / element
+    4) get() - > this method is not available  because of the implementation class(index differs)
+	
+WebTable:
+========
+    <table>
+	   <tbody> 
+	     <tr>  ->tablerow
+		   <th> ->tableheader
+		   </th>
+		 </tr>
+		 <tr>
+		    <td> ->tabledata
+		    </td>
+			<td>
+		    </td>
+			<td>
+		    </td>
+		 </tr>
+	   
+	   </tbody>
+	
+	
+	</table>	
