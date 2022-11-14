@@ -1,0 +1,126 @@
+Today's Agenda:
+===============
+   1)9:30-10:30->Alert,Snapshot
+   2)10:30-10:45->Classroom
+   3)10:45-11:45->Frames
+   4)11:45-12:00->Classroom
+   5)12:00-12:25->ShadowDom
+   6)12:25-12:30->Recap
+Alert:
+======
+What ?
+    -modal dialog box  
+    -It is written in JavaScript (Script tag) and	hence we cannot inspect the alert box
+Why?
+   ->If we didnot handle the alert -Unable to Interact with the other WebElements 	
+
+How we can achieve this?
+   -Right Click and inspect on the alert
+   -Selenium WebDriver cannot directly interact with the alert
+   -switch the control to the alert(switchTo())
+   
+Methods of Alert:
+================
+  1)accept()-Positive approach
+  2)dismiss()-Negative approach
+  3)sendKeys()-Enter the text
+  4)getText()-To get the text in the alert box
+  
+
+Types of Alert:
+===============
+    -Simple Alert(only one option)
+    -Confirm Alert(Only 2 options)	
+	-Prompt Alert
+	
+Exceptions:
+==========
+  NoAlertPresentException(NAP)
+     -If you are trying to interact with the alert which is not available
+  UnhandledAlertException(UAE)
+     -If an alert is popping up and if you didnt handle the alert 
+	 
+Sweet alert:
+===========	 
+	 -Inspectable
+	 -Locate the element 
+	 
+Snapshot:
+=========
+   	 For Alert Snapshot  cannot be taken
+Frames:
+=======
+What?
+   -DOM inside a DOM
+
+why?
+   -NoSuchElementException
+   
+Ways to identify the frame:
+   -Right click and see the options
+   -By tagname
+   
+
+How?
+   ->switch the control to the frame(switchTo().frame())
+   
+Methods:
+    Best example for overloading in selenium
+   -frame(by index)
+   -frame(String name or id)
+   -frame(WebElement)   
+   
+   defaultContent()
+      come out of all the frames(get back to the main window)
+Exception:
+==========
+   NoSuchFrameException	  
+	  
+Nested Frame:
+=============
+	driver.switchTo().parentFrame(); 
+	   switch to the immediate parent
+	   
+	   frame1
+	   frame2
+	   frame3
+	   frame4
+	   
+	   
+Disable-notifications:
+======================
+   1)ElementInterceptedException
+   2)ElementNotInteractableException
+
+        ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
+		ChromeDriver driver = new ChromeDriver(options);   
+	   
+	  
+   
+	
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
