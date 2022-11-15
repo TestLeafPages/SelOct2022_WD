@@ -1,0 +1,87 @@
+Todays Agenda:
+==============
+    1)9:30-10:30->Window handling
+	2)10:30-11:00->Classroom
+	3)11:00-12:00->Actions Class
+	4)12:00-12:20->Classroom
+	5)12:20-12:30->Recap
+
+Windows:
+=======
+   Window/Tab-Url which has all the controls for that specific window
+   6DAF8ECB0EC54C2272CE15F3731F95B5
+Methods:
+=======
+   getWindowHandle();
+   getWindowHandles();   
+   
+  Exception:
+  ===========
+     NoSuchWindowException  - The window you are trying talk doesnot exist
+	 
+	 
+Advanced User Interactions:
+===========================
+    -mouse Actions
+
+mouseHover
+draganddrop
+clickandhold
+scrolldown
+
+  Actions class
+  1)moveToElement()->mousehover
+  2)draganddropBy()->ele,x,y
+  3)draganddrop()->source,dest
+  4)contextClick()->rightClick
+  5)doubleClick()->doubleClick
+  6)scrollToElement()-scroll
+  7)clickandhold()
+  
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+   	
+	
