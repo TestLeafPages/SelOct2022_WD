@@ -1,0 +1,60 @@
+Today's Agenda:
+==============
+   1)9:30-10:30->Map
+   2)10:30-11:00->Classroom
+   3)11:00-11:30->Shadowdom,JavaScriptClick
+   4)11:30-12:00->Classroom
+   5)12:00-12:30->ServiceNow
+Map:
+====
+  - Collection
+  - Interface
+  - Key,Value 
+  - Key is always unique
+  - Value can be duplicate
+  - Key+Value->Entry
+  
+Implementation Class:
+=====================
+    -HashMap ->      Random order
+    -TreeMap ->      ASCII order(alphabetic order)
+    -LinkedHashMap ->Based on the Insertion order
+
+Methods:
+========
+    1)size()-Number of items inside the map
+    2)put(key,Value)->Elements inside the map
+	3)getKey()->key
+	4)getValue()
+	5)contains()->boolean value
+
+Classroom:
+===========
+  int[] nums ={1,2,2,1,3,4};
+  //output->3 4
+  
+	
+	
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
