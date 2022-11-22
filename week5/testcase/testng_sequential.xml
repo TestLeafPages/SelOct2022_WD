@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LeafTapsModules">
+<groups>
+<run>
+<include name="Anju">
+<include name="varun">
+</include> -->
+</include>
+</run>
+</groups>
+	<test name="LeafTaps.LeadFunctions" verbose="2">
+		<classes>
+			<class name="week4.day4.testcase.CreateLead" />
+			<class name="week4.day4.testcase.EditLead" />
+			<class name="week4.day4.testcase.DuplicateLead" />
+			<class name="week4.day4.testcase.DeleteLead" />
+			<class name="week4.day4.testcase.MergeLead" />
+
+
+		</classes>
+	</test> <!-- LeafTaps.LeadFunctions -->
+</suite> <!-- LeafTapsModules -->

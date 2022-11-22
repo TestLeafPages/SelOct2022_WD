@@ -1,0 +1,70 @@
+Todays Agenda:
+==============
+   1)9:30-11:00->Attributes
+   2)11:00-11:30->Classroom
+   3)11:30-12:15->Static Parameterization
+   4)12:15-12:25->Classroom
+   5)12:25-12:30->Recap
+ 
+Attributes:
+===========
+1)invocationCount
+         -default value for invocationCount is 1
+         -The number of times a testcase should execute
+         -Use it when:you like to create data for the same information  
+
+2)timeOut
+     -The number of milliseconds this testcase should take
+	 -Use it when:you like to benchmark the performance of the test steps
+	 
+3)invocationTimeOut
+    -The maximum number of millisecondsthis test should take for cumulated time of all the 
+invocationCount
+    -This attribute will be ignored if invocationCount is not given
+    -Donot use it	
+	 
+4)priority:
+     -default value for priority is 0 
+     -To schedule the priorities for the testcases
+     -Lower priorities should run first
+	 
+There are two kinds of dependencies:
+===================================
+Hard dependencies:
+ -All the methods you depend on must have run and succeeded for you to run. 
+ -If at least one failure occurred in your dependencies, you will not be invoked and marked as a
+  SKIP in the report.
+Soft dependencies. 
+   -You will always be run after the methods you depend on, even if some of them have failed. 
+    -This is useful when you just want to make sure that your test methods are run in a 
+     certain order but their success doesn't really depend on the success of others. 
+    -A soft dependency is obtained by adding "alwaysRun=true" in your @Test annotation.	 
+
+5)dependsOnMethods
+     -String of Arrays
+     	 
+6)enabled:
+    -Whether the methods are enabled
+    -These testcases will be marked as ignored in the index.html report	
+
+7)alwaysRun	
+	
+7)groups:
+    Anju-CreateLead,EditLead
+	Asma-DuplicateLead
+	varun-DeleteLead,MergeLead
+
+Classroom:
+========
+    1)Run one of the testcase(CreateLead)-run 2 times
+	2)Make another test(EditLead) depends on the other test(CreateLead)
+	     -Confirm CreateLead(first/ dependency test)runs first
+		 -Confirm the dependent testcase runs second
+		 -Then make the dependency CreateLead test to fail using timeOut
+		 -Confirm the dependency gets skipped
+	3)Make Duplicate Lead as ignored testcase 
+        -Confirm the status from the report	
+	  
+	
+	
+    	

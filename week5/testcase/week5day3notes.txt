@@ -1,0 +1,7 @@
+Todays Agenda:
+=============
+   1)9:30-10:30->Cucumber Introduction & Feature
+   2)10:30-11:00->Classroom
+   3)11:00-12:00->StepDefinition & Runner
+   4)12:00-12:15->Classroom
+   5)12:15-12:30->Recap
