@@ -1,0 +1,61 @@
+Todays Agenda:
+===============
+   9:30-10:30->POM introduction
+   10:30-11:00->POM DEsign
+   11:00-11:30->Classroom
+   11:30-12:30->Integration
+   
+PageObjectModel:
+===============
+       pom.xml->project object model
+	   POM->Page Object Model
+	   
+	 -Page Object Model is a design pattern to build your framework
+Framework:
+==========
+  It is a collection of multiple testcases 
+
+Advantages:
+===========
+    -easy maintenance
+	-Maintain the uniformity
+	-Reduce the duplicate code
+	-Better HTMl report
+
+
+Steps to Implement PageObjectModel:
+==================================
+   1)Create a separate Project for POM
+   2)Add all the dependencies in the pom.xml
+   3)Create 2 packages (base,pages)
+   4)Inside base package create a BaseClass
+   5)Inside the BaseClass have preCondition and PostCOndition(Load the url)
+   6)Inside the pages package create 6 pages
+       -LoginPage
+	   -WelcomePage
+	   -MyHomePage
+	   -MyLeadsPage
+	   -CreateLeadPage
+	   -ViewLeadPage
+   7)Make sure all the pages should extend your BaseClass
+   8)For each Pages create separate methods and put the codes for each of your action
+   9)Finally add the return statement
+        -If the control stays  in the same page return this and change the return type
+        -If the control moves to another page then add return statement according to it
+
+Reason:
+-Because of static driver
+  The browser which is last opened at last(latest session-id)
+Steps to implement parallel execution:
+======================================
+   1)Remove static in the baseclass
+   2)Create a Constructor in all the pages with Chromedriver as argument
+   3)And pass the driver in all the constructor call
+   
+   
+
+
+		
+	
+   
+   
