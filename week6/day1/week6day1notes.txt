@@ -1,0 +1,75 @@
+ Today's Agenda:
+===============
+   1)9:30-10:00->Cucumber Introduction
+   2)10:00-11:00->Feature file creation
+   3)11:00-11:30->Classroom
+   4)11:30-12:15->Step Defintion and Runner 
+   5)12:15-12:25->Classroom
+   6)12:25-12:30->Recap
+Cucumber:
+=========
+   ->BDD Automation tool
+   
+TDD:
+====
+   Test Driven Development
+   -Write the testcases first
+   -REview and approve the testcases by the project team
+   -Approved testcases will drive the development   
+
+ATDD:
+=====
+   Acceptance Test Driven Development
+   -Write User Acceptance testcases first
+   -REview and approve the testcases by the project team
+   -Approved testcases will drive the development   
+
+BDD:
+====
+  Behavior Driven Development
+  To solve the communication gap between the non-technical team and the tech-team (Dev&Testers)using Gherkin language
+  -Test Scenarios are captured first as behaviours using the common language which is understandable by tech and non tech team
+  -Approved testcases will drive the development
+  ->Software development approach
+Gherkin keywords:
+================
+  Feature: Used to describe the functionality
+  Scenario: Used to describe the testcases
+  Given: Used to represent pre-condition
+  When: Used to represent the test condition/step
+  Then: Used to represent the expected result for positive scenario
+  But: Used to represent the expected result for negative scenario
+  
+  Background: Common pre conditions
+  Scenario Outline $ Examples: To pass Multiple data
+  And: Used as a conjunction when we have BDD keywords repeating consequetively
+  
+Steps to start with Cucumber:
+===========================
+   -Check the dependencies  in pom.xml
+   -Check for the plugin installed
+   -In src/test/java create three packages
+       -features
+	      Right Click package->New->File->Login.feature->Finish
+	   -steps
+	   -runner
+	   
+Steps to create a Feature file:
+==============================
+  1)Type Feature: and type the description
+  2)Type Scenario: And mention the testcase using Gherkin keywords
+  3)Create a class under steps package 
+  4)Create methods for each of the gherkin keywords mentioned in the feature file under Scenario  
+  5)Create Runner class in the runner package 
+      -extend runner class with AbstractTestNGCucumberTests
+	  -On the top of the class Use @CucumberOptions and use the attributes
+	    -features("path of feature file")
+		-glue=steps package name
+		-monochrome->to remove the junk files in the console
+		-publish-To display the cucumber report in the console
+How to parameterize the data?
+=============================
+    1)Find the data that is to be parameterized for a testcase
+    2)Enclose the data with '' single quote in the feature file
+	3)In stepDefinition replace the data with {string}
+	4)Pass the arguments and replace the hardcoded data with argument
