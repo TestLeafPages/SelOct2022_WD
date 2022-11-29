@@ -1,0 +1,27 @@
+Today's Agenda:
+==============
+  1)9:30-10:30->Scenario Outline(Passing multiple data)
+  2)10:30-11:00->Hooks Implementation
+  3)11:00-11:30->Classroom
+  4)11:30-12:00->Tags
+  5)12:00-12:20->Classroom
+  6)12:20-12:30->Recap
+How to pass multiple data ?
+==========================
+  1)Scenario Outline   Examples  
+  
+  
+Hooks Implementation:
+=====================
+   @Before - To have the common pre conditions
+   @After - To have the post conditions 
+   
+Steps:
+=======
+  1)Write feature file for CreateLead
+  2)Pass multiple data for createLead using Scenario Outline
+  3)Write StepDefintion for CreateLead
+  4)Create BaseClass and put all the pre conditions(Launch,Load url) using @BeforeMethod,AfterMethod
+  5)StepdDefinitions should extend BaseClass
+  6)Runner class should extend BaseClass
+  7)BaseClass should extend AbstractTestNGCucumberTests  
