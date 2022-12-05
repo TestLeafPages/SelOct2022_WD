@@ -1,0 +1,55 @@
+https://github.com/TestLeafPages/Hybrid_Framework
+
+Steps to download:
+==================
+   1)Copy link in the browser
+   2)click Copy and click Download Zip
+   3)Once downloaded extract the Zip file
+   4)Go to your Eclipse ->File->Import->Maven->Existing Maven Project->Browse the folder->Finish
+   
+FrameWork:
+==========
+    ->LeafBot FrameWork which is a hybrid framework
+    ->This framework is desiged based on POM design pattern
+    ->We use Selenium WebDriver to interact with web Applications
+	->TestNG for data Execution
+	->Apache POI to read data from excel to process mutiple data testing
+	->Cucumber to support BDD approach
+	->Extent reports is used to generate html automation summary report
+	->We use both TestNG and Cucumber in this Hybrid_Framework
+	
+Components :
+============
+   ->We use Browser and Element as Interfaces to have design pattern related to browser and element activities
+     like open browser	and findElement respectively
+   ->SeleniumBase is the libraray to have all the wrapper methods or unimplemented methods  
+   ->ProjectSpecificMethods to have all the common methods specific to the project
+   ->pages to have all the classes related to each pages 
+   ->testcases to have all the classes for each testcases
+   ->utils package to have all the classes related to external applications
+        DataLibrary->to read data from Excel
+		Reporter->to generate all the reports
+
+Hierarchy:
+==========
+AbstractTestNGCucumberTests
+   DriverInstance
+      Reporter 
+         SeleniumBase
+           ProjectSpecificMethods
+                 Pages and testcases		
+
+Execution Flow:
+==============
+     @BeforeSuite(startReport())-Reporter
+	   @BeforeTest(setValues())  -Testcase
+	     @BeforeClass(startTestCase())-Reporter
+		    @DataProvider(fetchData())-ProjectSpecificMethods
+			   @BeforeMethod(preCondition())-ProjectSpecificMethods
+			      @Test-Testcases
+				@AfterMethod(postCondition())-ProjectSpecificMethods
+			@AfterClass-NA
+        @AfterTest-NA
+      @AfterSuite(endResult())-Reporter	
+				 
+		
